@@ -1,10 +1,25 @@
 <?php
 
+// Pour debug
 var_dump($_GET);
 
+// Structure de routage : définir la page qui sera inclue, en fonction de la valeur de $_GET["page"] (choix utilisateur)
+// Si $_GET["page"] est défini :
+if(isset($_GET["page"])) {
 
-
-
+    switch($_GET["page"]) {
+        case "page1" : $pageAInclure = "page1.php"; 
+        break;
+        case "page2" : $pageAInclure = "page2.php"; 
+        break;
+        case "page3" : $pageAInclure = "page3.php"; 
+        break;
+        default : $pageAInclure = "page1.php"; 
+    }
+// Sinon :
+} else {
+    $pageAInclure = "page1.php";
+}
 
 
 ?>
@@ -28,6 +43,7 @@ var_dump($_GET);
     <div class="content">
 
     <!-- Ici se trouvera le html spécifique à chaque page -->
+    <?php require "html/$pageAInclure" ?>
 
     </div>
 
