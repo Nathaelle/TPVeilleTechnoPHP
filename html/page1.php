@@ -36,7 +36,7 @@ require_once "articles.php";
 
 <article>
     <h3><?= $article["titre"] ?></h3>
-    <p class="news main"><?= substr($article["description"], 0, 100) ?>...<a href="index.php?page=article&art=0">Lire la suite...</a></p>
+    <p class="news main"><?= substr($article["description"], 0, 100) ?>...<a href="index.php?page=vuearticle">Lire la suite...</a></p>
     <div class="art">
         <div class="img-cont"><img class="img-resp" src="img/<?= $article["image"] ?>" alt=""></div>
     </div>

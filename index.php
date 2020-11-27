@@ -14,6 +14,8 @@ if(isset($_GET["page"])) {
         break;
         case "page3" : $pageAInclure = "page3.php"; 
         break;
+        case "vuearticle" : $pageAInclure = "vuearticle.php"; 
+        break;
         default : $pageAInclure = "page1.php"; 
     }
 // Sinon :
