@@ -16,11 +16,11 @@
 
     <p>Paragraphe affiché si la condition est vérifiée</p>
 
-<?php else : ?>
 
 <?php //elseif(true) : ?>
+<?php else : ?>
 
-    <p>Paragraphe qui a peu de chance d'être afficher</p>
+    <p>Paragraphe qui a peu de chance d'être affiché</p>
 
 <?php endif ?>
 
